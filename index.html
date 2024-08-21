@@ -16,6 +16,8 @@
   <!-- DaisyUI CDN -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awsome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
   <!-- Tailwind Config -->
     <script>
       tailwind.config = {
@@ -87,11 +89,11 @@
                         <button class="btn bg-orange-500 hover:bg-orange-700 px-10 text-white">Purchase</button>
                     </div>
                   <!-- Image Container -->
-                    <div class="flex-1">
+                    <div class="flex-1 mt-8 lg:mt-0">
                       <img src="./images/slider/bike1.png" class="w-[405px]" />
                     </div>
                 </div>
-                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <div class="absolute left-5 right-5 top-[58%] lg:top-1/2 flex -translate-y-1/2 transform justify-between">
                   <a href="#slide4" class="btn btn-circle">❮</a>
                   <a href="#slide2" class="btn btn-circle">❯</a>
                 </div>
@@ -111,13 +113,13 @@
                     <img src="./images/slider/bike2.png" class="w-[505px]" />
                   </div>
                 </div>
-                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <div class="absolute left-5 right-5 top-[58%] lg:top-1/2 flex -translate-y-1/2 transform justify-between">
                   <a href="#slide1" class="btn btn-circle">❮</a>
                   <a href="#slide3" class="btn btn-circle">❯</a>
                 </div>
               </div>
             <!-- Slide 3 -->
-              <div id="slide3" class="carousel-item relative lg:h-[550px] w-full bg-orange-300 rounded">
+              <div id="slide3" class="carousel-item relative lg:h-[550px] w-full bg-orange-200 rounded">
                 <div class="lg:flex p-7 lg:p-24">
                   <!-- Text Container -->
                   <div class="flex-1">
@@ -131,7 +133,7 @@
                     <img src="./images/slider/bike3.png" class="w-[450px]" />
                   </div>
                 </div>
-                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <div class="absolute left-5 right-5 top-[58%] lg:top-1/2 flex -translate-y-1/2 transform justify-between">
                   <a href="#slide2" class="btn btn-circle">❮</a>
                   <a href="#slide4" class="btn btn-circle">❯</a>
                 </div>
@@ -151,7 +153,7 @@
                     <img src="./images/slider/bike4.png" class="w-[500px]" />
                   </div>
                 </div>
-                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <div class="absolute left-5 right-5 top-[58%] lg:top-1/2 flex -translate-y-1/2 transform justify-between">
                   <a href="#slide3" class="btn btn-circle">❮</a>
                   <a href="#slide1" class="btn btn-circle">❯</a>
                 </div>
@@ -190,9 +192,9 @@
           <!-- Cards -->
             <div class="mt-10 lg:flex lg:justify-between lg:mt-12">
               <!-- Card 1 -->
-                <div class="card mx-auto bg-base-100 w-96 shadow-xl border-2">
+                <div class="card mx-auto bg-base-100 w-[98%] lg:w-96 shadow-xl border-2">
                   <figure>
-                    <img class="pt-5" src="./images/others/latest1.png" alt="Bike" />
+                    <img class="pt-7 w-72 lg:w-[335px] lg:pt-5" src="./images/others/latest1.png" alt="Bike" />
                   </figure>
                   <div class="card-body">
                     <div class="flex items-center gap-4">
@@ -207,9 +209,9 @@
                   </div>
                 </div>
               <!-- Card 2 -->
-                <div class="card mx-auto mt-7 lg:mt-0 bg-base-100 w-96 shadow-xl border-2">
+                <div class="card mx-auto mt-7 lg:mt-0 bg-base-100 w-[98%] lg:w-96 shadow-xl border-2">
                   <figure>
-                    <img class="pt-5" src="./images/others/latest2.png" alt="Bike" />
+                    <img class="pt-7 w-72 lg:w-[335px] lg:pt-5" src="./images/others/latest2.png" alt="Bike" />
                   </figure>
                   <div class="card-body">
                     <div class="flex items-center gap-4">
@@ -224,9 +226,9 @@
                   </div>
                 </div>
               <!-- Card 3 -->
-                <div class="card mx-auto mt-7 lg:mt-0 bg-base-100 w-96 shadow-xl border-2">
+                <div class="card mx-auto mt-7 lg:mt-0 bg-base-100 w-[98%] lg:w-96 shadow-xl border-2">
                   <figure>
-                    <img class="pt-5" src="./images/others/latest3.png" alt="Bike" />
+                    <img class="pt-7 w-72 lg:w-[335px] lg:pt-5" src="./images/others/latest3.png" alt="Bike" />
                   </figure>
                   <div class="card-body">
                     <div class="flex items-center gap-4">
@@ -322,7 +324,7 @@
             <div class="hero-content flex-col lg:flex-row items-center lg:gap-10">
               <img src="./images/others/faq.png"
                 class="max-w-sm w-72 rounded-lg shadow-2xl" />
-              <div class="space-y-1">
+              <div class="space-y-1 mt-8 lg:mt-0">
                 <!-- FAQ 1 -->
                   <div class="collapse collapse-arrow bg-base-200 border-2 border-orange-200">
                     <input type="radio" name="my-accordion-2" checked="checked" />
@@ -371,6 +373,43 @@
     </main>
 
   <!-- Footer Section -->
-    <footer class="mt-16 lg:mt-28 mb-40"></footer>
+    <footer class="mt-16 lg:mt-28 lg:h-96 bg-black text-white">
+        <div class="w-[90%] mx-auto lg:w-[85%] lg:flex lg:justify-between lg:pt-28">
+          <!-- left container -->
+            <div class="pt-12 lg:pt-0">
+              <ul class="flex lg:inline-flex gap-6 cursor-pointer">
+                  <li class="hover:text-orange-600">Download Now</li>
+                  <li class="hover:text-orange-600">License</li>
+              </ul>
+              <ul class="flex flex-wrap lg:flex gap-6 pt-5 cursor-pointer">
+                <li class="hover:text-orange-600"><a href="">About</a></li>
+                <li class="hover:text-orange-600"><a href=""></a>Features</li>
+                <li class="hover:text-orange-600"><a href=""></a>Pricing</li>
+                <li class="hover:text-orange-600"><a href=""></a>Careers</li>
+                <li class="hover:text-orange-600"><a href=""></a>Help</li>
+                <li class="hover:text-orange-600"><a href=""></a>Privacy Policy</li>
+              </ul>
+              <p class="pt-5 lg:pt-8">© 2024 bike. All rights reserved</p>
+            </div>
+          <!-- mid container -->
+            <div class="mt-9 lg:mt-0">
+              <h3 class="text-lg pb-5 font-bold text-orange-500">SOCIAL</h3>
+              <div class="space-x-4">
+                <i class="fa-brands fa-square-facebook text-4xl"></i>
+                <i class="fa-brands fa-square-whatsapp text-4xl"></i>
+                <i class="fa-brands fa-square-instagram text-4xl"></i>
+                <i class="fa-brands fa-square-x-twitter text-4xl"></i>
+              </div>
+            </div>
+          <!-- right container -->
+            <div class="mt-9 pb-14 lg:pb-0 lg:mt-0">
+              <h3 class="text-lg pb-5 font-bold text-orange-500">Get the App</h3>
+              <div>
+                <img class="w-40" src="./images/others/android.png" alt="">
+                <img class="w-40 pt-3" src="./images/others/ios.png" alt="">
+              </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
